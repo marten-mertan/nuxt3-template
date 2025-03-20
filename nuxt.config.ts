@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -8,17 +7,16 @@ export default defineNuxtConfig({
 
   app: {
     baseURL: '/nuxt3-template/',
-
-    /**
-     * Метатеги, фавиконки и т.п
-     * Для генерации фавиконок - https://realfavicongenerator.net/
-     */
-
     head: {
       htmlAttrs: {
         lang: 'en',
       },
       title: 'Nuxt3 Template',
+
+      /**
+       * Метатеги, фавиконки и т.п
+       * Для генерации фавиконок - https://realfavicongenerator.net/
+       */
       meta: [
         {
           charset: 'utf-8',
@@ -39,7 +37,6 @@ export default defineNuxtConfig({
           name: 'author',
           content: 'Mertan',
         },
-        /* Favicons */
         {
           name: 'msapplication-TileColor',
           content: '#e7609e',
@@ -68,9 +65,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-03-09',
 
-  /**
-   * Миксины и переменные доступны во всех компонентах и во всех scss файлах
-   */
+  /* Миксины и переменные доступны во всех компонентах и во всех scss файлах */
   vite: {
     css: {
       preprocessorOptions: {
@@ -79,6 +74,31 @@ export default defineNuxtConfig({
         },
       },
     },
+
+    /* Настройки для обработки .vue-файлов с TypeScript */
+    vue: {
+      script: {
+        defineModel: true, // Поддержка defineModel для TS
+        propsDestructure: true, // Поддержка деструктуризации пропсов
+      },
+    },
+
+    /* Оптимизация обработки TypeScript */
+    esbuild: {
+      target: 'esnext', // Устанавливаем цель для TS
+      tsconfigRaw: {
+        compilerOptions: {
+          experimentalDecorators: true, // Если используем декораторы
+        },
+      },
+    },
+  },
+
+  /* Добавляем настройки TypeScript */
+  typescript: {
+    strict: true,
+    shim: false,
+    typeCheck: true,
   },
 
   eslint: {
