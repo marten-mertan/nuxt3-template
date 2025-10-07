@@ -7,10 +7,10 @@
     <div :class="[$style.wrapper, 'container']">
       <div :class="$style.title">
         <NuxtLink
-          href="/"
+          to="/"
           :class="$style.link"
         >
-          Nuxt3 Animations
+          Nuxt3 Template
         </NuxtLink>
       </div>
       <LayoutHeaderMenu />
