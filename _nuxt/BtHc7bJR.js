@@ -1,1 +1,0 @@
-import{_ as a,c as o,a as s,n as t,o as c}from"./CofomEdN.js";const r="_IndexPage_wcczo_7",l={IndexPage:r},d={};function _(n,e){return c(),o("div",{class:t([n.$style.IndexPage,"container"])},e[0]||(e[0]=[s("h1",{class:"h1"}," Index Page ",-1),s("p",{class:"text"}," Content goes here ",-1)]),2)}const x={$style:l},f=a(d,[["render",_],["__cssModules",x]]);export{f as default};

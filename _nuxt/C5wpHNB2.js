@@ -1,0 +1,1 @@
+import{_ as a,c as t,a as s,u as o,o as c}from"#entry";const r="_IndexPage_1p7ky_8",l={IndexPage:r},d={};function _(n,e){return c(),t("div",{class:o([n.$style.IndexPage,"container"])},[...e[0]||(e[0]=[s("h1",{class:"h1"}," Index Page ",-1),s("p",{class:"text"}," Content goes here ",-1)])],2)}const x={$style:l},f=a(d,[["render",_],["__cssModules",x]]);export{f as default};
