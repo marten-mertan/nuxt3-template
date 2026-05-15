@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
+    '@pinia/nuxt',
   ],
 
   devtools: { enabled: true },
@@ -62,6 +63,11 @@ export default defineNuxtConfig({
     '~/assets/scss/vendors.scss',
     '~/assets/scss/common.scss',
   ],
+
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000,
+  },
 
   compatibilityDate: '2025-03-09',
 
