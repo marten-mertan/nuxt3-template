@@ -21,7 +21,8 @@
   .Footer {
     position: relative;
     z-index: 10;
-    background: $black;
+    background: $bg-secondary;
+    border-top: .1rem solid $border;
   }
 
   .wrapper {
@@ -29,14 +30,15 @@
     align-items: center;
     justify-content: flex-end;
     height: $footer-h;
-    color: $white;
+    padding: 0 1.2rem;
+    color: $text-secondary;
     font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: .2rem;
   }
 
   .link {
-    color: $white;
+    color: $accent;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: .2rem;

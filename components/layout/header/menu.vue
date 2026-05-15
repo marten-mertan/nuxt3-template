@@ -32,7 +32,7 @@
     transition: border-bottom $default-transition;
 
     &:hover {
-      border-bottom: .1rem solid $black;
+      border-bottom: .1rem solid $text-primary;
     }
   }
 </style>

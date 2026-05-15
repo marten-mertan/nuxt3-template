@@ -59,7 +59,7 @@ const value = computed({
 .label {
   margin: 0 0 .8rem 0;
   font-size: 1.6rem;
-  color: $black;
+  color: $text-primary;
 }
 
 .wrapper {
@@ -73,7 +73,7 @@ const value = computed({
   flex: 1;
   cursor: pointer;
   height: .2rem;
-  background: $black;
+  background: $border;
   border-radius: .4rem;
   transition: background-color $default-transition;
 
@@ -81,7 +81,7 @@ const value = computed({
     appearance: none;
     width: 1.6rem;
     height: 1.6rem;
-    background: $black;
+    background: $border;
     cursor: pointer;
     border-radius: 50%;
     transition: transform $default-transition;
@@ -94,7 +94,7 @@ const value = computed({
   &::-moz-range-thumb {
     width: 1.6rem;
     height: 1.6rem;
-    background: $black;
+    background: $border;
     cursor: pointer;
     border-radius: 50%;
     transition: transform $default-transition;
@@ -108,12 +108,12 @@ const value = computed({
 .min, .max {
   position: absolute;
   top: 0;
-  background: $white;
-  color: $black;
+  background: $border;
+  color: $text-primary;
   padding: .2rem .6rem;
   border-radius: .4rem;
   font-size: 1.2rem;
-  border: .1rem solid $black;
+  border: .1rem solid $border;
 }
 
 .min {
@@ -129,11 +129,11 @@ const value = computed({
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: $black;
-  color: $white;
+  background: $border;
+  color: $text-primary;
   padding: .2rem .6rem;
   border-radius: .4rem;
   font-size: 1.2rem;
-  border: .1rem solid $black;
+  border: .1rem solid $border;
 }
 </style>

@@ -24,8 +24,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: $white;
-    border-bottom: .1rem solid $gray-light;
+    padding: 0 1.2rem;
+    background: $bg-secondary;
+    border-bottom: .1rem solid $border;
     z-index: 100;
   }
 
