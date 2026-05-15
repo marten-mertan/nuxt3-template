@@ -113,6 +113,7 @@ const value = computed({
   padding: .2rem .6rem;
   border-radius: .4rem;
   font-size: 1.2rem;
+  line-height: 1;
   border: .1rem solid $border;
 }
 
@@ -134,6 +135,7 @@ const value = computed({
   padding: .2rem .6rem;
   border-radius: .4rem;
   font-size: 1.2rem;
+  line-height: 1;
   border: .1rem solid $border;
 }
 </style>
